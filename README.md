@@ -31,7 +31,7 @@ In you project you want to use this plugin, create a build.gradle that looks som
     apply plugin: 'net.daverix.eclipselibraryplugin'
 
     eclipseLibrary {
-        outputDir 'pkg/' // Optional. Puts the eclipse library into a folder in you project called "pkg"
+        outputDir 'pkg/' // Optional. Puts the eclipse library into a folder in your project called "pkg"
     }
 
     android {
