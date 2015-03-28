@@ -1,4 +1,8 @@
 apply plugin: 'groovy'
+apply plugin: 'maven'
+
+version = "0.1"
+group = "net.daverix.eclipseplugin"
 
 repositories {
     mavenCentral()
@@ -9,3 +13,12 @@ dependencies {
     compile localGroovy()
     compile "com.android.tools.build:gradle:1.1.0"
 }
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository url: 'file://' + new File(getRootDir(), 'pkg/maven').absolutePath
+        }
+    }
+}
+task install(dependsOn: uploadArchives)
