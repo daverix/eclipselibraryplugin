@@ -3,7 +3,7 @@ import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.TaskAction
 
 public class GenerateEclipseProjectPropertiesFileTask extends DefaultTask {
-    String[] references
+    Collection<String> references
     int targetSdkVersion
     File destinationDir
 
