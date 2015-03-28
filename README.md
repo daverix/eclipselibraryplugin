@@ -6,12 +6,21 @@ This plugin lets you create an Eclipse ADT Library Plugin from any Android Libra
 Installation
 ------------
 
-Run ```./gradlew build install``` to install the plugin into your local maven or run ```./gradlew build uploadArchives``` to create a maven repo inside "pkg/maven"
+To install the plugin into your local maven run...
+
+    ./gradlew build install
+
+...or run the following to create a repo inside "pkg"
+
+    ./gradlew build uploadArchives
+
+*Please note that the name of the git root folder is the name of the artifact*
 
 Usage
 -----
 
-In you project you want to use this plugin, create a build.gradle that looks something like this. Replace mavenLocal if you have put it in a repository somewhere else.
+In you project you want to use this plugin, create a build.gradle that looks something like this.
+Replace mavenLocal if you have put it in a repository somewhere else.
 
 *build.gradle*
 
@@ -46,6 +55,7 @@ To create an Eclipse Library, execute the following command...
 
 ... and it will create an eclipse library for each of your modules where the plugin is applied!
 
+
 License
 -------
 
@@ -62,3 +72,4 @@ License
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
