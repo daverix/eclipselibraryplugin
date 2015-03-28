@@ -41,7 +41,7 @@ Replace mavenLocal if you have put it in a repository somewhere else.
 
     eclipseLibrary {
         // Optional. Puts the eclipse library into a folder in your project called "pkg"
-        outputDir 'pkg/'
+        outputDir file('pkg')
     }
 
     android {
