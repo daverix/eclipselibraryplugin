@@ -1,4 +1,4 @@
-package net.daverix.eclipseplugin
+package net.daverix.eclipselibraryplugin
 
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.TaskAction;
@@ -8,7 +8,7 @@ public class GenerateEclipseClasspathFileTask extends DefaultTask {
 
     @TaskAction
     def generateFile() {
-        def file = new File(destinationDir, ".classpath")
+        def file = project.file("$destinationDir/.classpath")
         file.text = "<classpath>\n" +
                 "   <classpathentry exported=\"true\" kind=\"con\" path=\"com.android.ide.eclipse.adt.LIBRARIES\"/>\n" +
                 "   <classpathentry kind=\"con\" path=\"com.android.ide.eclipse.adt.ANDROID_FRAMEWORK\"/>\n" +

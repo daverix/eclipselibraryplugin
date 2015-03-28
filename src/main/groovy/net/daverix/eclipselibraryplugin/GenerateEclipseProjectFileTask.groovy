@@ -1,4 +1,4 @@
-package net.daverix.eclipseplugin
+package net.daverix.eclipselibraryplugin
 
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.TaskAction;
@@ -9,7 +9,7 @@ public class GenerateEclipseProjectFileTask extends DefaultTask {
 
     @TaskAction
     def generateFile() {
-        def file = new File(destinationDir, ".project")
+        def file = project.file("$destinationDir/.project")
         file.text = "<projectDescription>\n" +
                 "   <name>$projectName</name>\n" +
                 "   <comment/>\n" +

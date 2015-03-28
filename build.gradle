@@ -2,7 +2,7 @@ apply plugin: 'groovy'
 apply plugin: 'maven'
 
 version = "0.1"
-group = "net.daverix.eclipseplugin"
+group = "net.daverix.eclipselibraryplugin"
 
 repositories {
     mavenCentral()
@@ -21,4 +21,3 @@ uploadArchives {
         }
     }
 }
-task install(dependsOn: uploadArchives)
