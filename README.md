@@ -37,7 +37,7 @@ Replace mavenLocal if you have put it in a repository somewhere else.
     }
 
     apply plugin: 'com.android.library'
-    apply plugin: 'net.daverix.eclipselibraryplugin'
+    apply plugin: 'net.daverix.eclipselibrary'
 
     eclipseLibrary {
         // Optional. Puts the eclipse library into a folder in your project called "pkg"
