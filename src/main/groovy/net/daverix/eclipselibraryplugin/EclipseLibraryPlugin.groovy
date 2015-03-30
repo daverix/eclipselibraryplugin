@@ -107,8 +107,8 @@ public class EclipseLibraryPlugin implements Plugin<Project> {
     }
 
     static def getClasspaths(Project project) {
-        return project.android.libraryVariants.collect {
-            it.javaCompile.classpath
+        return project.android.libraryVariants.collect { v ->
+            return v.javaCompile.classpath
         }
     }
 
