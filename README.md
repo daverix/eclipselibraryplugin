@@ -1,7 +1,7 @@
 Eclipse Library plugin
 ======================
 
-This plugin lets you create an Eclipse ADT Library Plugin from any Android Library Module in gradle.
+This plugin lets you create an Eclipse ADT Library from any Android Library Module in gradle.
 
 Installation
 ------------
